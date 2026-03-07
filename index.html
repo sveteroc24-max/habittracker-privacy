@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitTracker — Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-bottom: 1px solid #6c63ff33;
+        }
+
+        .hero .icon {
+            font-size: 56px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .hero .sub {
+            color: #a0a0c0;
+            font-size: 0.95rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #6c63ff22;
+            border: 1px solid #6c63ff55;
+            color: #9d98ff;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-size: 0.8rem;
+            margin-top: 12px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-bottom: 32px;
+        }
+
+        .lang-btn {
+            background: #1e1e35;
+            border: 1px solid #333;
+            color: #a0a0c0;
+            padding: 6px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: #6C63FF;
+            border-color: #6C63FF;
+            color: #fff;
+        }
+
+        .section {
+            background: #1a1a2e;
+            border: 1px solid #2a2a45;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 16px;
+        }
+
+        .section h2 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2 .emoji {
+            font-size: 1.2rem;
+        }
+
+        .section p, .section li {
+            color: #b0b0cc;
+            font-size: 0.92rem;
+            margin-bottom: 8px;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: #6c63ff15;
+            border-left: 3px solid #6C63FF;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 12px;
+            color: #c0c0e0 !important;
+            font-size: 0.88rem !important;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #6c63ff22, #a855f722);
+            border: 1px solid #6c63ff44;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        .contact-box a {
+            color: #9d98ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            color: #555;
+            font-size: 0.8rem;
+            padding: 20px;
+        }
+
+        /* Настройки переключения языков */
+        [data-lang="ru"] { display: none; }
+        body.ru [data-lang="en"] { display: none; }
+        body.ru [data-lang="ru"] { display: block; }
+        
+        body.ru .section p[data-lang="ru"],
+        body.ru .section li[data-lang="ru"],
+        body.ru h2[data-lang="ru"] { display: block; }
+
+        .inline-ru { display: none; }
+        body.ru .inline-en { display: none; }
+        body.ru .inline-ru { display: inline; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="icon">✨</div>
+        <h1>HabitTracker</h1>
+        <div class="sub">
+            <span class="inline-en">Privacy Policy</span>
+            <span class="inline-ru">Политика конфиденциальности</span>
+        </div>
+        <div class="badge">
+            <span class="inline-en">Last updated: March 2026</span>
+            <span class="inline-ru">Обновлено: март 2026</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+            <button class="lang-btn" id="btn-ru" onclick="setLang('ru')">🇷🇺 Русский</button>
+        </div>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">📋</span>
+                <span class="inline-en">Overview</span>
+                <span class="inline-ru">Общее</span>
+            </h2>
+            <p data-lang="en">HabitTracker ("we", "the app") is a habit tracking application developed by an individual developer. This Privacy Policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
+            <p data-lang="ru">HabitTracker — это приложение для отслеживания привычек, разработанное независимым разработчиком. Данная политика конфиденциальности объясняет, какие данные мы собираем, как используем и каковы ваши права.</p>
+            <div class="highlight">
+                <span class="inline-en">🔒 We do not sell your personal data to third parties. Ever.</span>
+                <span class="inline-ru">🔒 Мы никогда не продаём ваши личные данные третьим лицам.</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">📦</span>
+                <span class="inline-en">Data We Collect</span>
+                <span class="inline-ru">Данные, которые мы собираем</span>
+            </h2>
+            <p data-lang="en"><strong style="color:#fff">When you sign in with Google:</strong></p>
+            <p data-lang="ru"><strong style="color:#fff">При входе через Google:</strong></p>
+            <ul>
+                <li data-lang="en">Google account email address</li>
+                <li data-lang="ru">Адрес электронной почты Google-аккаунта</li>
+                <li data-lang="en">Google user ID (for account identification)</li>
+                <li data-lang="ru">Идентификатор пользователя Google (для идентификации аккаунта)</li>
+                <li data-lang="en">Display name and profile photo (optional, shown in profile)</li>
+                <li data-lang="ru">Отображаемое имя и фото профиля (опционально, отображается в профиле)</li>
+            </ul>
+            <br>
+            <p data-lang="en"><strong style="color:#fff">App usage data (stored in cloud sync):</strong></p>
+            <p data-lang="ru"><strong style="color:#fff">Данные использования приложения (облачная синхронизация):</strong></p>
+            <ul>
+                <li data-lang="en">Habit names, streaks and completion history</li>
+                <li data-lang="ru">Названия привычек, стрики и история выполнения</li>
+                <li data-lang="en">Coins, rubies and in-app purchase records</li>
+                <li data-lang="ru">Монеты, рубины и записи о покупках</li>
+                <li data-lang="en">Goals, reminders and challenge progress</li>
+                <li data-lang="ru">Цели, напоминания и прогресс в челленджах</li>
+                <li data-lang="en">Virtual pet state and shop purchases</li>
+                <li data-lang="ru">Состояние виртуального питомца и покупки в магазине</li>
+            </ul>
+            <div class="highlight">
+                <span class="inline-en">ℹ️ Cloud sync is optional. The app works fully offline without signing in.</span>
+                <span class="inline-ru">ℹ️ Облачная синхронизация необязательна. Приложение полностью работает офлайн без входа в аккаунт.</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">🎯</span>
+                <span class="inline-en">How We Use Your Data</span>
+                <span class="inline-ru">Как мы используем данные</span>
+            </h2>
+            <ul>
+                <li data-lang="en">To sync your habits and progress across devices</li>
+                <li data-lang="ru">Для синхронизации привычек и прогресса между устройствами</li>
+                <li data-lang="en">To restore your data if you reinstall the app</li>
+                <li data-lang="ru">Для восстановления данных при переустановке приложения</li>
+                <li data-lang="en">To display your profile information within the app</li>
+                <li data-lang="ru">Для отображения информации профиля внутри приложения</li>
+                <li data-lang="en">To send local push notifications for habit reminders (no data sent to our servers)</li>
+                <li data-lang="ru">Для отправки локальных push-уведомлений с напоминаниями о привычках (данные не передаются на серверы)</li>
+            </ul>
+            <p data-lang="en">We do <strong style="color:#fff">not</strong> use your data for advertising, analytics tracking, or share it with any third parties beyond what is listed below.</p>
+            <p data-lang="ru">Мы <strong style="color:#fff">не</strong> используем ваши данные для рекламы, трекинга аналитики и не передаём их третьим лицам, кроме перечисленных ниже.</p>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">🤝</span>
+                <span class="inline-en">Third-Party Services</span>
+                <span class="inline-ru">Сторонние сервисы</span>
+            </h2>
+            <p data-lang="en">The app uses the following third-party services, each with their own privacy policies:</p>
+            <p data-lang="ru">Приложение использует следующие сторонние сервисы, каждый из которых имеет собственную политику конфиденциальности:</p>
+            <ul>
+                <li data-lang="en"><strong style="color:#fff">Google Firebase (Authentication & Firestore)</strong> — stores your synced data securely. <a href="https://firebase.google.com/support/privacy" target="_blank" style="color:#9d98ff">Firebase Privacy Policy</a></li>
+                <li data-lang="ru"><strong style="color:#fff">Google Firebase (Authentication & Firestore)</strong> — безопасно хранит синхронизированные данные. <a href="https://firebase.google.com/support/privacy" target="_blank" style="color:#9d98ff">Политика Firebase</a></li>
+                <li data-lang="en"><strong style="color:#fff">Google Play Billing</strong> — processes in-app purchases (ruby packs). We do not store payment details. <a href="https://policies.google.com/privacy" target="_blank" style="color:#9d98ff">Google Privacy Policy</a></li>
+                <li data-lang="ru"><strong style="color:#fff">Google Play Billing</strong> — обрабатывает покупки в приложении (пакеты рубинов). Платёжные данные мы не храним. <a href="https://policies.google.com/privacy" target="_blank" style="color:#9d98ff">Политика Google</a></li>
+                <li data-lang="en"><strong style="color:#fff">Google Sign-In</strong> — used for optional account authentication.</li>
+                <li data-lang="ru"><strong style="color:#fff">Google Sign-In</strong> — используется для опциональной аутентификации аккаунта.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">💎</span>
+                <span class="inline-en">In-App Purchases</span>
+                <span class="inline-ru">Покупки в приложении</span>
+            </h2>
+            <p data-lang="en">HabitTracker offers optional in-app purchases (ruby currency packs). All payments are processed exclusively by Google Play. We do not collect or store any payment card information. Purchased rubies are tied to your Google account and can be restored if you reinstall the app.</p>
+            <p data-lang="ru">HabitTracker предлагает необязательные покупки в приложении (пакеты рубинов). Все платежи обрабатываются исключительно через Google Play. Мы не собираем и не храним данные платёжных карт. Купленные рубины привязаны к вашему Google-аккаунту и могут быть восстановлены при переустановке приложения.</p>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">🔔</span>
+                <span class="inline-en">App Permissions</span>
+                <span class="inline-ru">Разрешения приложения</span>
+            </h2>
+            <ul>
+                <li data-lang="en"><strong style="color:#fff">Notifications</strong> — to send habit reminders at your chosen times. All processing is local.</li>
+                <li data-lang="ru"><strong style="color:#fff">Уведомления</strong> — для отправки напоминаний о привычках в выбранное время. Обработка только локальная.</li>
+                <li data-lang="en"><strong style="color:#fff">Internet</strong> — only for Google Sign-In and optional cloud sync.</li>
+                <li data-lang="ru"><strong style="color:#fff">Интернет</strong> — только для Google Sign-In и опциональной облачной синхронизации.</li>
+                <li data-lang="en"><strong style="color:#fff">Biometrics</strong> — optional PIN lock feature. Biometric data never leaves your device.</li>
+                <li data-lang="ru"><strong style="color:#fff">Биометрия</strong> — опциональная функция PIN-блокировки. Биометрические данные никогда не покидают устройство.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">⚖️</span>
+                <span class="inline-en">Your Rights & Data Deletion</span>
+                <span class="inline-ru">Ваши права и удаление данных</span>
+            </h2>
+            <p data-lang="en">You can delete all your cloud data at any time by:</p>
+            <p data-lang="ru">Вы можете удалить все облачные данные в любое время:</p>
+            <ul>
+                <li data-lang="en">Signing out of your account in the app (Profile screen)</li>
+                <li data-lang="ru">Выйдя из аккаунта в приложении (экран Профиля)</li>
+                <li data-lang="en">Contacting us via email to request complete data deletion</li>
+                <li data-lang="ru">Написав нам на email с запросом полного удаления данных</li>
+            </ul>
+            <p data-lang="en">Upon request, we will delete all data associated with your account from our Firebase database within 30 days.</p>
+            <p data-lang="ru">По запросу мы удалим все данные, связанные с вашим аккаунтом, из базы Firebase в течение 30 дней.</p>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">👶</span>
+                <span class="inline-en">Children's Privacy</span>
+                <span class="inline-ru">Конфиденциальность детей</span>
+            </h2>
+            <p data-lang="en">HabitTracker is rated Everyone (3+) and does not knowingly collect personal information from children under 13. If you believe a child has provided personal information, please contact us and we will delete it promptly.</p>
+            <p data-lang="ru">HabitTracker имеет рейтинг «Для всех (3+)» и сознательно не собирает личную информацию от детей до 13 лет. Если вы считаете, что ребёнок предоставил личные данные, свяжитесь с нами, и мы немедленно удалим их.</p>
+        </section>
+
+        <section class="section">
+            <h2>
+                <span class="emoji">📬</span>
+                <span class="inline-en">Contact</span>
+                <span class="inline-ru">Контакт</span>
+            </h2>
+            <p data-lang="en">If you have any questions about this Privacy Policy or want to request data deletion:</p>
+            <p data-lang="ru">Если у вас есть вопросы по данной политике или вы хотите запросить удаление данных:</p>
+            <div class="contact-box">
+                <div style="font-size:1.5rem;margin-bottom:8px;">✉️</div>
+                <p data-lang="en" style="color:#c0c0e0;margin-bottom:8px;">Developer: <strong style="color:#fff">sveteroc24-max</strong></p>
+                <p data-lang="ru" style="color:#c0c0e0;margin-bottom:8px;">Разработчик: <strong style="color:#fff">sveteroc24-max</strong></p>
+                <a href="https://github.com/sveteroc24-max" target="_blank">github.com/sveteroc24-max</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        © 2026 HabitTracker · <span class="inline-en">Privacy Policy</span><span class="inline-ru">Политика конфиденциальности</span>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.documentElement.lang = lang; 
+            document.body.classList.toggle('ru', lang === 'ru');
+            
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+        }
+
+        // Автоопределение языка браузера
+        if (navigator.language && navigator.language.startsWith('ru')) {
+            setLang('ru');
+        }
+    </script>
+</body>
+</html>
