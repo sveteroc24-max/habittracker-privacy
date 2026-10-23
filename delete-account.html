@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitTracker — Delete Account</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #0f0f1a; color: #e0e0e0; line-height: 1.7;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 60px 20px 40px; text-align: center;
+            border-bottom: 1px solid #6c63ff33;
+        }
+        .hero .icon { font-size: 56px; margin-bottom: 12px; }
+        .hero h1 { font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
+        .hero .sub { color: #a0a0c0; font-size: 0.95rem; }
+        .container { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+        .lang-switch { display: flex; gap: 10px; justify-content: flex-end; margin-bottom: 32px; }
+        .lang-btn {
+            background: #1e1e35; border: 1px solid #333; color: #a0a0c0;
+            padding: 6px 16px; border-radius: 20px; cursor: pointer; font-size: 0.85rem;
+        }
+        .lang-btn.active { background: #6C63FF; border-color: #6C63FF; color: #fff; }
+        .section {
+            background: #1a1a2e; border: 1px solid #2a2a45; border-radius: 16px;
+            padding: 28px; margin-bottom: 16px;
+        }
+        .section h2 {
+            font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 14px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .section p, .section li { color: #b0b0cc; font-size: 0.92rem; margin-bottom: 8px; }
+        .section ul, .section ol { padding-left: 22px; }
+        strong { color: #fff; }
+        a { color: #9d98ff; }
+        .highlight {
+            background: #6c63ff15; border-left: 3px solid #6C63FF;
+            padding: 12px 16px; border-radius: 0 8px 8px 0; margin-top: 12px;
+            color: #c0c0e0; font-size: 0.9rem;
+        }
+        .footer { text-align: center; color: #555; font-size: 0.8rem; padding: 20px; }
+        .footer a { color: #777; }
+
+        [data-lang="ru"] { display: none; }
+        body.ru [data-lang="en"] { display: none; }
+        body.ru [data-lang="ru"] { display: block; }
+        body.ru li[data-lang="ru"] { display: list-item; }
+        .inline-ru { display: none; }
+        body.ru .inline-en { display: none; }
+        body.ru .inline-ru { display: inline; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="icon">🗑️</div>
+        <h1>HabitTracker</h1>
+        <div class="sub">
+            <span class="inline-en">Delete your account and data</span>
+            <span class="inline-ru">Удаление аккаунта и данных</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+            <button class="lang-btn" id="btn-ru" onclick="setLang('ru')">🇷🇺 Русский</button>
+        </div>
+
+        <section class="section">
+            <h2><span>📱</span>
+                <span class="inline-en">Option 1 — in the app</span>
+                <span class="inline-ru">Способ 1 — в приложении</span>
+            </h2>
+            <ol>
+                <li data-lang="en">Open HabitTracker and sign in with your Google account.</li>
+                <li data-lang="ru">Откройте HabitTracker и войдите через Google.</li>
+                <li data-lang="en">Go to <strong>Profile</strong>.</li>
+                <li data-lang="ru">Перейдите в <strong>Профиль</strong>.</li>
+                <li data-lang="en">Tap <strong>Delete account</strong> and confirm.</li>
+                <li data-lang="ru">Нажмите <strong>Удалить аккаунт</strong> и подтвердите.</li>
+            </ol>
+            <p data-lang="en">Your account and all cloud data are deleted immediately.</p>
+            <p data-lang="ru">Аккаунт и все данные в облаке удаляются сразу.</p>
+        </section>
+
+        <section class="section">
+            <h2><span>✉️</span>
+                <span class="inline-en">Option 2 — without the app</span>
+                <span class="inline-ru">Способ 2 — без приложения</span>
+            </h2>
+            <p data-lang="en">Send an email to <a href="mailto:sveteroc24@gmail.com?subject=HabitTracker%20-%20Delete%20account">sveteroc24@gmail.com</a> with the subject <strong>“HabitTracker — Delete account”</strong> from the Google account email you used to sign in.</p>
+            <p data-lang="ru">Напишите на <a href="mailto:sveteroc24@gmail.com?subject=HabitTracker%20-%20Delete%20account">sveteroc24@gmail.com</a> с темой <strong>«HabitTracker — удаление аккаунта»</strong> с той почты Google, через которую вы входили.</p>
+            <p data-lang="en">We will delete your account and all data within 30 days and confirm by email.</p>
+            <p data-lang="ru">Мы удалим аккаунт и все данные в течение 30 дней и подтвердим это письмом.</p>
+        </section>
+
+        <section class="section">
+            <h2><span>🧹</span>
+                <span class="inline-en">What is deleted</span>
+                <span class="inline-ru">Что удаляется</span>
+            </h2>
+            <ul>
+                <li data-lang="en">Your account (Google sign-in record)</li>
+                <li data-lang="ru">Аккаунт (запись входа через Google)</li>
+                <li data-lang="en">Habits, completion history, streaks and goals</li>
+                <li data-lang="ru">Привычки, история выполнения, стрики и цели</li>
+                <li data-lang="en">Coins, rubies, purchased items and selected themes</li>
+                <li data-lang="ru">Монеты, рубины, купленные предметы и выбранные темы</li>
+                <li data-lang="en">Virtual pet, calendar notes and all other progress stored in the cloud</li>
+                <li data-lang="ru">Питомец, заметки календаря и весь остальной прогресс в облаке</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><span>📄</span>
+                <span class="inline-en">What is kept</span>
+                <span class="inline-ru">Что сохраняется</span>
+            </h2>
+            <p data-lang="en">We do not keep any of your data after deletion. Purchase records are kept by Google Play under its own policy. Data stored only on your device remains there until you uninstall the app or clear its data.</p>
+            <p data-lang="ru">После удаления мы не храним никаких ваших данных. Записи о покупках хранит Google Play по своим правилам. Данные, сохранённые только на устройстве, остаются там, пока вы не удалите приложение или не очистите его данные.</p>
+            <div class="highlight">
+                <span class="inline-en">⚠️ Deleted progress, rubies and purchases cannot be restored.</span>
+                <span class="inline-ru">⚠️ Удалённый прогресс, рубины и покупки восстановить нельзя.</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2026 HabitTracker ·
+        <a href="index.html"><span class="inline-en">Privacy Policy</span><span class="inline-ru">Политика конфиденциальности</span></a>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.documentElement.lang = lang;
+            document.body.classList.toggle('ru', lang === 'ru');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+        }
+        if (navigator.language && navigator.language.startsWith('ru')) {
+            setLang('ru');
+        }
+    </script>
+</body>
+</html>

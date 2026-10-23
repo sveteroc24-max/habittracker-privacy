@@ -159,6 +159,7 @@
         [data-lang="ru"] { display: none; }
         body.ru [data-lang="en"] { display: none; }
         body.ru [data-lang="ru"] { display: block; }
+        body.ru li[data-lang="ru"] { display: list-item; }
         
         body.ru .section p[data-lang="ru"],
         body.ru .section li[data-lang="ru"],
@@ -179,8 +180,8 @@
             <span class="inline-ru">Политика конфиденциальности</span>
         </div>
         <div class="badge">
-            <span class="inline-en">Last updated: March 2026</span>
-            <span class="inline-ru">Обновлено: март 2026</span>
+            <span class="inline-en">Last updated: October 2026</span>
+            <span class="inline-ru">Обновлено: октябрь 2026</span>
         </div>
     </header>
 
@@ -255,8 +256,8 @@
                 <li data-lang="en">To send local push notifications for habit reminders (no data sent to our servers)</li>
                 <li data-lang="ru">Для отправки локальных push-уведомлений с напоминаниями о привычках (данные не передаются на серверы)</li>
             </ul>
-            <p data-lang="en">We do <strong style="color:#fff">not</strong> use your data for advertising, analytics tracking, or share it with any third parties beyond what is listed below.</p>
-            <p data-lang="ru">Мы <strong style="color:#fff">не</strong> используем ваши данные для рекламы, трекинга аналитики и не передаём их третьим лицам, кроме перечисленных ниже.</p>
+            <p data-lang="en">We do <strong style="color:#fff">not</strong> use your habits or progress for advertising and do not share them with third parties. The app shows optional rewarded video ads through Google AdMob (see below).</p>
+            <p data-lang="ru">Мы <strong style="color:#fff">не</strong> используем ваши привычки и прогресс для рекламы и не передаём их третьим лицам. В приложении есть необязательная реклама с вознаграждением через Google AdMob (см. ниже).</p>
         </section>
 
         <section class="section">
@@ -274,6 +275,8 @@
                 <li data-lang="ru"><strong style="color:#fff">Google Play Billing</strong> — обрабатывает покупки в приложении (пакеты рубинов). Платёжные данные мы не храним. <a href="https://policies.google.com/privacy" target="_blank" style="color:#9d98ff">Политика Google</a></li>
                 <li data-lang="en"><strong style="color:#fff">Google Sign-In</strong> — used for optional account authentication.</li>
                 <li data-lang="ru"><strong style="color:#fff">Google Sign-In</strong> — используется для опциональной аутентификации аккаунта.</li>
+                <li data-lang="en"><strong style="color:#fff">Google AdMob</strong> — shows optional rewarded video ads (watch an ad to get a bonus spin or coins). AdMob may collect device identifiers such as the Advertising ID, IP address and ad interaction data to show and measure ads. <a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#9d98ff">How Google uses data in ads</a></li>
+                <li data-lang="ru"><strong style="color:#fff">Google AdMob</strong> — показывает необязательную рекламу с вознаграждением (посмотреть ролик, чтобы получить бонусный спин или монеты). AdMob может собирать идентификаторы устройства, например рекламный идентификатор, IP-адрес и данные о взаимодействии с рекламой, чтобы показывать и измерять рекламу. <a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#9d98ff">Как Google использует данные в рекламе</a></li>
             </ul>
         </section>
 
@@ -296,8 +299,10 @@
             <ul>
                 <li data-lang="en"><strong style="color:#fff">Notifications</strong> — to send habit reminders at your chosen times. All processing is local.</li>
                 <li data-lang="ru"><strong style="color:#fff">Уведомления</strong> — для отправки напоминаний о привычках в выбранное время. Обработка только локальная.</li>
-                <li data-lang="en"><strong style="color:#fff">Internet</strong> — only for Google Sign-In and optional cloud sync.</li>
-                <li data-lang="ru"><strong style="color:#fff">Интернет</strong> — только для Google Sign-In и опциональной облачной синхронизации.</li>
+                <li data-lang="en"><strong style="color:#fff">Internet</strong> — for Google Sign-In, optional cloud sync and rewarded ads.</li>
+                <li data-lang="ru"><strong style="color:#fff">Интернет</strong> — для входа через Google, опциональной облачной синхронизации и рекламы с вознаграждением.</li>
+                <li data-lang="en"><strong style="color:#fff">Advertising ID</strong> — used by Google AdMob for ads. You can reset or delete it in your device settings (Settings → Privacy → Ads).</li>
+                <li data-lang="ru"><strong style="color:#fff">Рекламный идентификатор</strong> — используется Google AdMob для рекламы. Его можно сбросить или удалить в настройках устройства (Настройки → Конфиденциальность → Реклама).</li>
                 <li data-lang="en"><strong style="color:#fff">Biometrics</strong> — optional PIN lock feature. Biometric data never leaves your device.</li>
                 <li data-lang="ru"><strong style="color:#fff">Биометрия</strong> — опциональная функция PIN-блокировки. Биометрические данные никогда не покидают устройство.</li>
             </ul>
@@ -309,14 +314,16 @@
                 <span class="inline-en">Your Rights & Data Deletion</span>
                 <span class="inline-ru">Ваши права и удаление данных</span>
             </h2>
-            <p data-lang="en">You can delete all your cloud data at any time by:</p>
-            <p data-lang="ru">Вы можете удалить все облачные данные в любое время:</p>
+            <p data-lang="en">You can delete your account and all cloud data at any time:</p>
+            <p data-lang="ru">Вы можете удалить аккаунт и все облачные данные в любое время:</p>
             <ul>
-                <li data-lang="en">Signing out of your account in the app (Profile screen)</li>
-                <li data-lang="ru">Выйдя из аккаунта в приложении (экран Профиля)</li>
-                <li data-lang="en">Contacting us via email to request complete data deletion</li>
-                <li data-lang="ru">Написав нам на email с запросом полного удаления данных</li>
+                <li data-lang="en">In the app: <strong style="color:#fff">Profile → Delete account</strong> (deleted immediately)</li>
+                <li data-lang="ru">В приложении: <strong style="color:#fff">Профиль → Удалить аккаунт</strong> (удаляется сразу)</li>
+                <li data-lang="en">Without the app: email <a href="mailto:sveteroc24@gmail.com?subject=Habit%20Tracker%20-%20Delete%20account" style="color:#9d98ff">sveteroc24@gmail.com</a> to request complete deletion</li>
+                <li data-lang="ru">Без приложения: напишите на <a href="mailto:sveteroc24@gmail.com?subject=Habit%20Tracker%20-%20Delete%20account" style="color:#9d98ff">sveteroc24@gmail.com</a> с запросом полного удаления</li>
             </ul>
+            <p data-lang="en">Step-by-step instructions: <a href="delete-account.html" style="color:#9d98ff">Delete your account</a></p>
+            <p data-lang="ru">Пошаговая инструкция: <a href="delete-account.html" style="color:#9d98ff">Удаление аккаунта</a></p>
             <p data-lang="en">Upon request, we will delete all data associated with your account from our Firebase database within 30 days.</p>
             <p data-lang="ru">По запросу мы удалим все данные, связанные с вашим аккаунтом, из базы Firebase в течение 30 дней.</p>
         </section>
@@ -343,6 +350,7 @@
                 <div style="font-size:1.5rem;margin-bottom:8px;">✉️</div>
                 <p data-lang="en" style="color:#c0c0e0;margin-bottom:8px;">Developer: <strong style="color:#fff">sveteroc24-max</strong></p>
                 <p data-lang="ru" style="color:#c0c0e0;margin-bottom:8px;">Разработчик: <strong style="color:#fff">sveteroc24-max</strong></p>
+                <a href="mailto:sveteroc24@gmail.com">sveteroc24@gmail.com</a><br>
                 <a href="https://github.com/sveteroc24-max" target="_blank">github.com/sveteroc24-max</a>
             </div>
         </section>
